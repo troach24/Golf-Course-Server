@@ -4,7 +4,7 @@ const router = express.Router();
 const queries = require("../queries/cart");
 
 router.get("/", (request, response, next) => {
-  console.log("get cart items");
+  console.log("GET cart items");
   var inv = queries.list();
   // console.log("inv: ", inv);
 
@@ -31,7 +31,7 @@ router.post("/", (request, response, next) => {
   queries
     .create(request.body)
     .then(cartItem => {
-      response.status(201).json({ cartItem });
+      return response.json({ cartItem });
     })
     .catch(next);
 });
