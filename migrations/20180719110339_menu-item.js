@@ -8,7 +8,10 @@ exports.up = function(knex) {
       .notNullable()
       .defaultTo("");
     table.float("price");
-    table.string("category");
+    table
+      .string("category")
+      .notNullable()
+      .defaultTo("");
     table
       .string("description")
       .notNullable()
