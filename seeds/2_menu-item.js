@@ -22,7 +22,7 @@ exports.seed = function(knex, Promise) {
           quantity: 1
         },
         {
-          name: "Cheese Steak",
+          name: "Philly Cheese Steak",
           price: 6.99,
           description: "",
           imageUrl:

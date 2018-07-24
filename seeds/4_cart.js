@@ -6,11 +6,11 @@ exports.seed = function(knex, Promise) {
       // Inserts seed entries
       return knex("cart").insert([
         {
-          name: "Confirmed Tee Time",
+          name: "July 27th @ 11am",
           price: 40,
           description: "",
           imageUrl: "http://www.coyoterungolf.com/Scorecard.jpg",
-          quantity: 1
+          quantity: 4
         }
       ]);
     });
