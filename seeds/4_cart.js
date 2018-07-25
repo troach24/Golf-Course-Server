@@ -4,14 +4,6 @@ exports.seed = function(knex, Promise) {
     .del()
     .then(function() {
       // Inserts seed entries
-      return knex("cart").insert([
-        {
-          name: "July 27th @ 11am",
-          price: 40,
-          description: "",
-          imageUrl: "http://www.coyoterungolf.com/Scorecard.jpg",
-          quantity: 4
-        }
-      ]);
+      return knex("cart").insert([{}]);
     });
 };

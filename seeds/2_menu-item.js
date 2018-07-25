@@ -78,7 +78,7 @@ exports.seed = function(knex, Promise) {
           quantity: 1
         },
         {
-          name: "Beer",
+          name: "PBR",
           price: 2.99,
           category: "Drink",
           description: "",
