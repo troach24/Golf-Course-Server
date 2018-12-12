@@ -42,7 +42,7 @@ exports.up = function(knex) {
       .notNullable()
       .defaultTo("");
     table.integer("quantity");
-    table.boolean("active").defaultTo(true);
+    table.boolean("active").notNullable().defaultTo(true);
   });
 };
 
