@@ -6,8 +6,7 @@ const queries = require("../queries/cart");
 router.get("/", (request, response, next) => {
   console.log("GET cart items");
   var inv = queries.list();
-  // console.log("inv: ", inv);
-
+  console.log("inv: ", inv);
   queries
     .list()
     .then(cartItems => {
