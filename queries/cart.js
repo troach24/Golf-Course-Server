@@ -10,16 +10,16 @@ module.exports = {
       .where("id", id)
       .first();
   },
-  create(cart) {
+  create(cartItem) {
     return database("cart")
-      .insert(cart)
+      .insert(cartItem)
       .returning("*")
       .then(record => record[0]);
   },
-  update(id, cart) {
+  update(id, cartItem) {
     return database("cart")
       .where("id", id)
-      .update(cart, "*")
+      .update(cartItem, "*")
       .then(record => record[0]);
   },
   delete(id) {
